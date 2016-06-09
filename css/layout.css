@@ -32,8 +32,6 @@
 		max-width: 90%;
 	}
 }
-
-
 .banner__social-links {
 	width: 100%;
 	position: absolute;
@@ -43,6 +41,7 @@
 	text-align: center;
 }
 .banner__social-links a {
+	font-size: 1.25em;
 	text-decoration: none;
 	color: gray;
 	margin: 10px;
@@ -50,5 +49,12 @@
 }
 .banner__social-links a:hover {
 	color: black;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
+}
+
+.test {
+	width: 1005;
+	height: 400px;
+	background: red;
+	margin: 10px 0;
 }
