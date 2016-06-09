@@ -1,8 +1,7 @@
 
 	function _(el) {
-		return document.getElementById("banner");
+		return document.querySelector("#banner");
 	}
 
+
 	_("banner").style.height = innerHeight + "px";
-
-
