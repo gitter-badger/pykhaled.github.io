@@ -12,7 +12,6 @@
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-
 }
 
 .banner__nav {
@@ -78,6 +77,9 @@
 	z-index: 888;
 	transition: all .5s ease-on-out;
 	text-align: center;
+}
+nav .banner__menuButton:hover {
+	color: white;
 }
 nav ul {
 	text-decoration: none;
