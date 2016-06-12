@@ -11,7 +11,7 @@
 
 		var nav = document.getElementById("nav");
 
-		if (nav.style.display == "none") {
+		if (nav.style.display == "none" || nav.style.display == "") {
 
 			this.innerHTML = "<i class='fa fa-times'></i>";
 			nav.style.display = "block";
