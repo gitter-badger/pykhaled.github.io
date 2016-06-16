@@ -1,10 +1,11 @@
 
-	function _(el) {
-		return document.querySelector("#banner");
+	// selctor function
+	function _(elm) {
+		return document.querySelector(elm);
 	}
 
 	// makes banner's height is the window's height
-	_("banner").style.height = innerHeight + "px";
+	_("section").style.height = innerHeight + "px";
 
 	// diplay nav menu div
 	document.getElementById("menuButton").addEventListener("click", function(){
