@@ -1,30 +1,18 @@
+$(function(){
 
-	// selctor function
-	function _(elm) {
-		return document.querySelector(elm);
-	}
-	// diplay nav menu div
-	document.getElementById("menuButton").addEventListener("click", function(){
+	// make banner image shows up slowlly
+	$(".banner__img").slideUp(100).delay(100).fadeIn(800);
 
-		var nav = document.getElementById("nav");
 
-		if (nav.style.display == "none" || nav.style.display == "") {
-
-			this.innerHTML = "<i class='fa fa-times'></i>";
-			nav.style.display = "block";
-
-		} else {
-
-			nav.style.display = "none";
-			this.innerHTML = "<i class='fa fa-bars'></i>";
-
-		}
-
+	// nav button behavior
+	$( "#menuButton" ).click(function() {
+		$("#nav").toggle(100);
 	});
 
 
+	// hide loading image after loads
+	$(window).load(function(){
+		$("#loader").hide();
+	});
 
-	// loading img
-	window.onload = function(){
-		document.getElementById("loader").style.display = "none";
-	}
+});
