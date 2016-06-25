@@ -1,7 +1,7 @@
 $(function(){
 
 	// make banner image shows up slowlly
-	$(".banner__img").slideUp(100).delay(100).fadeIn(800);
+	$(".banner__img").slideUp(100).delay(350).fadeIn(600);
 
 
 	// nav button behavior
