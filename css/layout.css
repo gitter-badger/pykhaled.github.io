@@ -1,37 +1,35 @@
-section {
+.heading {
+	width: 50%;
+	height: 100vh;
+	display: inline-block;
+	float: left;
+	line-height: 100vh;
+	text-align: center;
+	background: url(../imgs/about-img.jpg);
+	background-size: cover;
+	margin: 0;
+	font-size: 2rem;
+	text-shadow: 1px 1px 8px white;
+	color: white;
+}
+.content {
+	width: 50%;
+	margin: 30px 0;
+	display: inline-block;
+	float: right;
+	overflow: scroll;
+	padding: 10px;
+}
+@media screen and (max-width: 700px) {
+	.heading {
+		display: none;
+	}
+}
+
+#banner {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
-}
-	.heading {
-		width: 50%;
-		height: 100vh;
-		display: inline-block;
-		float: left;
-		line-height: 100vh;
-		text-align: center;
-		background: url(../imgs/about-img.jpg);
-		background-size: cover;
-		margin: 0;
-		font-size: 2rem;
-		text-shadow: 1px 1px 8px white;
-		color: white;
-	}
-	.content {
-		width: 50%;
-		margin: 30px 0;
-		display: inline-block;
-		float: right;
-		overflow: scroll;
-		padding: 10px;
-	}
-	@media screen and (max-width: 700px) {
-		.heading {
-			display: none;
-		}
-	}
-
-#banner {
 	text-align: center;
 	background: #F4E7E7;
 
@@ -43,19 +41,6 @@ section {
 	top: 50%;
 	transform: translateY(-50%);
 }
-
-.banner__nav {
-	position: absolute;
-	bottom: 40px;
-	left: 50%;
-	transform: translatex(-50%);
-}
-.banner__nav__tag {
-	text-decoration: none;
-	color: black;
-	margin: 0 10px;
-}
-
 @media screen and (max-width: 700px) {
 	.banner__img {
 		max-width: 90%;
@@ -91,7 +76,7 @@ section {
 		outline: none;
 	}
 		#menuButton:hover {
-			color: black;
+			color: #ffffff;
 		}
 
 
@@ -120,26 +105,18 @@ section {
 			padding: 0;
 			margin:0;
 		}
-		nav ul li {
-			margin: 15px 0;
+			nav ul li {
+				margin: 15px 0;
 
-		}
-		nav ul li a {
-			text-decoration: none;
-			color: white;
-			border-bottom: 2px solid transparent;
-		}
-		nav ul li a:hover {
-			border-color: white;
-		}
-/* About section */
-#about {
-	background: yellow;
-}
-
-
-
-
+			}
+				nav ul li a {
+					text-decoration: none;
+					color: white;
+					border-bottom: 2px solid transparent;
+				}
+					nav ul li a:hover {
+						border-color: white;
+					}
 
 
 #loader {
