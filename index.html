@@ -30,13 +30,27 @@
 	</head>
 	<body>
 
+
+		<!-- Loader -->
 		<div id="loader"></div>
 
+		<!-- Header -->
 		<header class="header">
-			<button class="header__btn">
+			<button class="header__btn" onclick="openNav()">
 				<i class="fa fa-bars"></i>
 			</button>
 		</header>
+
+		<!-- Navigation -->
+		<nav class="mainNav" id="mainNav">
+			<butoon class="mainNav__btn" onclick="closeNav()">&times;</butoon>
+			<ul class="mainNav__menu">
+				<li><a onclick="closeNav()" href="#about" class="mainNav__menu__item">About</a></li>
+				<li><a onclick="closeNav()" href="#publications" class="mainNav__menu__item">Publications</a></li>
+				<li><a onclick="closeNav()" href="#portfolio" class="mainNav__menu__item">Portfolio</a></li>
+				<li><a onclick="closeNav()" href="#contact" class="mainNav__menu__item">Contact</a></li>
+			</ul>
+		</nav>
 
 		<!-- Banner -->
 		<section class="banner" id="banner">

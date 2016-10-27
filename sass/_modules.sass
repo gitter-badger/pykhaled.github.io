@@ -25,6 +25,37 @@
 		border: none
 		font-size: 1.5rem
 
+.mainNav
+	height: 100%
+	width: 0
+	background: rgba(0, 0, 0, 9.8)
+	transition: all .5s ease-in-out
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 1000
+	overflow: hidden
+	&__btn
+		position: absolute
+		top: 20px
+		right: 45px
+		font-size: 60px
+		color: white
+	&__menu
+		position: relative
+		top: 25% /* 25% from the top */
+		width: 100% /* 100% width */
+		text-align: center /* Centered text/links */
+		margin-top: 30px /* 30px top margin to avoid conflict with the close button on smaller screens */
+		color: white
+		padding: 0
+		&__item
+			padding: 8px
+			text-decoration: none
+			font-size: 36px
+			color: #818181
+			display: block /* Display block instead of inline */
+			transition: 0.3s /* Transition effects on hover (color) */
 
 .banner 
 	width: 100%
